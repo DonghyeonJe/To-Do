@@ -30,6 +30,12 @@ export const toDoState = atom<IToDo[]>({
   effects_UNSTABLE: [persistAtom],
 });
 
+export const customCategories = atom<string[]>({
+  key: "customCategory",
+  default: [],
+  effects_UNSTABLE: [persistAtom],
+});
+
 export const toDoSelector = selector({
   key: "toDoSelecter",
   get: ({ get }) => {

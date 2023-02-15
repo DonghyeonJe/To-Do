@@ -17,6 +17,7 @@ function CreateToDo() {
     ]);
     setValue("toDo", "");
   };
+
   return (
     <form onSubmit={handleSubmit(handleValid)}>
       <input
@@ -25,7 +26,7 @@ function CreateToDo() {
         })}
         placeholder="Write a to do"
       />
-      <button>add</button>
+      <button>Add</button>
     </form>
   );
 }
